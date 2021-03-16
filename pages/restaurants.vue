@@ -1,7 +1,8 @@
 <template>
-  <main class="container restaurants">
+  <main class="container restaurant">
     <div class="restaurantheading">
       <h1>Restaurants</h1>
+      <appselect />
     </div>
     <restaurantinfo />
   </main>
@@ -10,8 +11,11 @@
 <script>
 import restaurantinfo from "@/components/restaurantinfo.vue";
 
+import appselect from "@/components/select.vue";
+
 export default {
   components: {
+    appselect,
     restaurantinfo
   }
 };
