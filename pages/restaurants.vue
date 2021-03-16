@@ -1,18 +1,19 @@
 <template>
-  <main class="container">
-    <appheader />
+  <main class="container restaurants">
+    <h1>Restaurants</h1>
     <restaurantinfo />
   </main>
 </template>
 
 <script>
-import appheader from "@/components/header.vue";
 import restaurantinfo from "@/components/restaurantinfo.vue";
 
 export default {
   components: {
-    restaurantinfo,
-    appheader
+    restaurantinfo
   }
 };
 </script>
+
+<style lang="scss" scoped>
+</style>

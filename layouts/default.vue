@@ -3,16 +3,19 @@
     <div class="content">
       <appmenu />
       <Nuxt />
+      <appfooter />
     </div>
   </div>
 </template>
 
 <script>
-import appmenu from "@/components/appmenu.vue";
+import appmenu from "@/components/menu.vue";
+import appfooter from "@/components/footer.vue";
 
 export default {
   components: {
-    appmenu
+    appmenu,
+    appfooter
   }
 };
 </script>
