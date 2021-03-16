@@ -21,7 +21,7 @@ export const actions = {
     async getFoodData({ state, commit }) {
         if (state.fooddata.length) return
         try {
-            const url = 'https://dva9vm8f1h.execute-api.us-east-2.amazonaws.com/production/restaurants';
+            const url = process.env.URL;
             const config = {
                 headers: {
                     "Content-Type": "application/json",
