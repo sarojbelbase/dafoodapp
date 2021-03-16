@@ -29,7 +29,6 @@ export const actions = {
                 }
             }
             await axios.get(url, config).then(res => res.data).then(data => {
-                console.log(data)
                 commit('updateFoodData', data)
             })
         } catch (err) {
