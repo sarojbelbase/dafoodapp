@@ -28,7 +28,7 @@ export const actions = {
                     "x-api-key": process.env.AWS_API_KEY
                 }
             }
-            await axios.get(url, config).then(res => res.json()).then(data => {
+            await axios.get(url, config).then(res => res.data).then(data => {
                 console.log(data)
                 commit('updateFoodData', data)
             })
