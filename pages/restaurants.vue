@@ -1,6 +1,8 @@
 <template>
   <main class="container restaurants">
-    <h1>Restaurants</h1>
+    <div class="restaurantheading">
+      <h1>Restaurants</h1>
+    </div>
     <restaurantinfo />
   </main>
 </template>
