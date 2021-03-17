@@ -16,7 +16,7 @@ export const mutations = {
         state.fooddata = data
     },
 
-    addtoCart: (state, formOutput) => {
+    addToCart: (state, formOutput) => {
         state.cart.push(formOutput)
     }
 }
