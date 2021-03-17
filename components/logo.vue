@@ -44,4 +44,10 @@ svg {
 .cls-2 {
   stroke-width: 4px;
 }
+
+@media screen and (max-width: 600px) {
+  #circles {
+    display: none;
+  }
+}
 </style>
