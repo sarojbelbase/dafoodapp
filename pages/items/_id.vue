@@ -93,11 +93,12 @@ export default {
       let formOutput = {
         item: this.currentItem.item,
         count: this.count,
-        options: this.item.options,
+        options: this.itemOptions,
         addOns: this.itemAddons,
         combinedPrice: this.combinedPrice
       };
       this.cartSubmitted = true;
+      this.$store.commit("addToCart", formOutput);
     }
   }
 };
