@@ -20,13 +20,11 @@ import { mapGetters } from "vuex";
 import applogo from "@/components/logo.vue";
 
 export default {
-  computed: {
-    ...mapGetters(["cartCount"])
-  }
-};
-export default {
   components: {
     applogo
+  },
+  computed: {
+    ...mapGetters(["cartCount"])
   }
 };
 </script>
