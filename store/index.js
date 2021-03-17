@@ -18,7 +18,6 @@ export const getters = {
 
 }
 
-
 export const mutations = {
     updateFoodData: (state, data) => {
         state.fooddata = data
@@ -29,7 +28,6 @@ export const mutations = {
         state.cart.push(formOutput)
     }
 }
-
 
 export const actions = {
     async getFoodData({ state, commit }) {
